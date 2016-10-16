@@ -62,4 +62,3 @@ gem 'pg'
 gem 'has_secure_token'
 gem 'active_model_serializers', '~> 0.9.0'
 gem 'puma'
-gem "active_admin_import"
