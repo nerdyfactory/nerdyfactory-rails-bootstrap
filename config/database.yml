@@ -3,7 +3,7 @@ default: &default
   encoding: unicode
   pool: 8
   host: localhost
-  username: borg
+  username: nerdyfactory
   password: password
 
 development:
