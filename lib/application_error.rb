@@ -1,1 +1,0 @@
-class ApplicationError < RuntimeError; end
