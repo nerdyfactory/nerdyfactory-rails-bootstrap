@@ -9,7 +9,7 @@ Rails5 based boilerplate for restful API server including admin page
 
 #### testing
 - [rspec-rails](https://github.com/rspec/rspec-rails)
-- [factory-girl-rails](https://github.com/thoughtbot/factory_girl_rails)
+- [factory-bot-rails](https://github.com/thoughtbot/factory_bot_rails)
 - [faker](https://github.com/stympy/faker)
 
 ## install
