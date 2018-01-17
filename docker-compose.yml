@@ -3,11 +3,18 @@ services:
   db:
     image: postgres
   web:
-    build: .
-    command: bundle exec rails s -p 3000 -b '0.0.0.0'
+    build:
+      context: .
+      dockerfile: ./docker/web/Dockerfile
+    depends_on:
+      - app
+    ports:
+      - 8080:80
+  app:
+    build:
+      context: .
+      dockerfile: ./docker/app/Dockerfile
     volumes:
       - .:/rails_app
-    ports:
-      - "3000:3000"
     depends_on:
       - db

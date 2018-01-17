@@ -47,6 +47,15 @@ specify db connect information for production
 ENV["BLAZER_DATABASE_URL"] = "postgres://user:password@hostname:5432/database"
 ```
 
+#### docker
+after install [docker](https://docs.docker.com/engine/installation/)
+```
+docker-compose build
+docker-compose run app rails db:create
+docker-compose run app rails db:migrate
+docker-compose up
+```
+
 ## testing
 after creating test database defined in `config/database.yml`
 ```
