@@ -4,7 +4,7 @@ default: &default
   pool: 8
   host: localhost
   database: nerdyfactory
-  username: nerdyfactory
+  username: postgres
   password: password
 
 development:
@@ -17,8 +17,9 @@ test:
   <<: *default
   database: nerdyfactory_test
 
-staging:
+docker:
   <<: *default
+  host: db
 
 production:
   <<: *default
