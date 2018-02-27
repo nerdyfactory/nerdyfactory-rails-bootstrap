@@ -1,6 +1,8 @@
-FROM ruby:2.4.2
+FROM ruby:2.5.0-alpine
 ENV RAILS_ENV docker
-RUN apt-get update -qq && apt-get install -y build-essential libpq-dev nodejs
+
+RUN apk add --no-cache --update build-base linux-headers git postgresql-dev nodejs tzdata
+
 RUN mkdir /rails_app
 WORKDIR /rails_app
 COPY . /rails_app

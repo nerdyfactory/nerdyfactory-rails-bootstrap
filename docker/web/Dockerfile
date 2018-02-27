@@ -1,8 +1,5 @@
 # Base image:
-FROM nginx
-
-# Install dependencies
-RUN apt-get update -qq && apt-get -y install apache2-utils
+FROM nginx:1.13.9-alpine
 
 # establish where Nginx should look for files
 ENV RAILS_ROOT /var/www/text-smasher
