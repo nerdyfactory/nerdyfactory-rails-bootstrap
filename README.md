@@ -7,6 +7,7 @@ Rails5 based boilerplate for restful API server including admin page
 - [Active Admin](http://activeadmin.info/)
 - [Devise](https://github.com/plataformatec/devise)
 - [blazer](https://github.com/ankane/blazer)
+- [apipie-rails](https://github.com/Apipie/apipie-rails)
 
 #### testing
 - [rspec-rails](https://github.com/rspec/rspec-rails)
