@@ -33,7 +33,7 @@ $ rails s
 #### blazer
 create a user having only select privileges for the blazer
 ```
-connect <userdbname>;
+\connect <userdbname>;
 BEGIN;
 CREATE ROLE <blazeruser> LOGIN PASSWORD '<blazeruserpassword>';
 GRANT CONNECT ON DATABASE <userdbname> TO <blazeruser>;
