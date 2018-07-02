@@ -19,12 +19,12 @@ Rails5 based boilerplate for restful API server including admin page
 run following commands in postgreSQL client eg. psql
 ```
 CREATE USER <yourdbuser> CREATEDB PASSWORD '<userdbpassword>';
-CREATE DATABASE <userdbname> OWNER <yourdbuser>;
 ```
 
 #### rails 
 ```
 $ bundle install
+$ rails db:create
 $ rails db:migrate
 $ rails db:seed
 $ rails s
